@@ -2,11 +2,11 @@ html{
   font-family: 'Lato', sans-serif;
 }
 body{
-  background: #466995;
+  background: #252525;
   color: #FFFFFF;
 }
 .orange-main-text{
-  color: #ff9069;
+  color: #f46d3d;
 }
 .purple-main-text{
   color: #a4b0f5;
@@ -16,4 +16,9 @@ body{
 }
 .brown-main-text{
   color: #7d4600;
+}
+blockquote{
+  margin: 10px 0 !important;
+  padding-left: 1rem !important;
+  border-left: 5px solid #f46d3d !important;
 }
