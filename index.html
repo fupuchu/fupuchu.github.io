@@ -1,93 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Leon's Resume">
-    <meta name="keywords" content="resume,online,singapore">
-    <meta name="author" content="Leon Ho">
-    <meta property="og:title" content="Leon's Resume" />
-    <meta property="og:description" content="Leon's Online Resume thank you so much for checking it out!" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leon's Resume</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Slabo+27px" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css">
-    <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
-   <!-- Compiled and minified JavaScript -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="orange-main-text"><i class="fas fa-child"></i> leon.ho</h1>
-      <h4><span class="purple-main-text"><i class="fab fa-html5"></i>
+<html lang="en" dir="ltr">
 
- Web Developer</span> | <span class="blue-main-text"><i class="fas fa-users"></i>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Short+Stack" rel="stylesheet">
+  <link rel="stylesheet" href="css/fa/css/fontawesome-all.min.css">
+  <title>Mastah Mynd</title>
+</head>
 
- Marketing</span> | <span class="brown-main-text"><i class="fas fa-cog"></i> Operations</span></h4>
-      <h4>About me</h4>
-      <blockquote>
-        <p>Hello! I'm Leon. I'm a self-taught web developer with a marketing background along with experience in online retail operations. As a self-taught web developer I'm always on the prowl for different web technologies to work with be it frontend or backend and applying marketing knowledge to web content.</p>
-        <p>I'm commited to helping a company or entity out to the best of my abillities and make time to learn and pickup new skills if needed.</p>
-        <p>I would love to hear from you if you're interested in hiring me! [CONTACT DETAILS HERE]</p>
-      </blockquote>
-    </div>
-
+<body>
   <div class="container">
-    <h4 class="orange-main-text">Professional Experience</h4>
-
-    <div class="row">
-    <div class="col s12 m4">
-      <div class="card-panel blue darken-2">
-        <h5>PLAYe Ptd Ltd</h5>
-        <p>
-          Marketing & Operations Executive | June to December 2017
+    <div class="header">
+      <h1>Mastah Mynd</h1>
+      <p>Guess the correct number between 0 to 5 in 10 attempts!</p>
+    </div>
+    <div id="gameBoard">
+      <div class="attemptBox">
+        <p id="attemptBox">Attempts:
+          <span id="attemptNum"></span>
         </p>
+        <div class="historyList">
+          <p>Previous Guess:</p>
+          <p id="history">Awaiting player's guess..</p>
+        </div>
+      </div>
+      <div class="inputWrapper" id="mainGuess">
+        <form id="form">
+          <div class="inputWrapper">
+            <input class="numGuess" id="num0" min="0" max="9" autocomplete="off">
+            <input class="numGuess" id="num1" min="0" max="9" autocomplete="off">
+            <input class="numGuess" id="num2" min="0" max="9" autocomplete="off">
+            <input class="numGuess" id="num3" min="0" max="9" autocomplete="off">
+          </div>
+          <div class="numSubmit">
+            <div class="btn" onclick="checkAnswer(event)">
+              <p>Guess the number!</p>
+            </div>
+        </form>
+        <h3 id="alertBox">
+        </h3>
+        </div>
       </div>
     </div>
-    <div class="col s12 m4">
-      <div class="card-panel blue darken-2">
-        <h5>FUPUCHU! Web Services</h5>
-        <p>October 2015 to Current</p>
-      </div>
-    </div>
-    <div class="col s12 m4">
-      <div class="card-panel blue darken-2">
-        <h5>Polaris Pte Ltd</h5>
-        <p>October 2014 to June 2016</p>
-      </div>
-    </div>
-  </div>
+    <footer>
+      <p>Made with <i class="fal fa-heart"></i> by <a href="">Leon Ho</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="js/win.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+</body>
 
-  </div>
-
-    <div class="container">
-      <h4 class="orange-main-text">Academic Experiece</h4>
-      <h5>Google Academy, Online</h5>
-      <h5>Code College, online</h5>
-      <h5>Build Websties from Scratch HTML5 & CSS3</h5>
-      <h5>MDIS, Singapore</h5>
-      <h5>Diploma in Mass Communications</h5>
-      <h5>ITE, Singapore</h5>
-      <h5>NITEC in Multimedia Technology</h5>
-    </div>
-
-    <div class="container">
-      <h4 class="orange-main-text">Skills</h4>
-      <ul>
-        <li>Microsoft Office 2016</li>
-        <li>Frontend Web Development</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>Ruby on Rails</li>
-        <li>Linux Backend</li>
-        <li>Shopify</li>
-        <li>WordPress Management</li>
-        <li>WordPress Implementation</li>
-        <li>Web Hosting Knowledge</li>
-        <li>Livestreaming Setup</li>
-      </ul>
-    </div>
-  </body>
 </html>

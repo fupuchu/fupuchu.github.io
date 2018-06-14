@@ -1,27 +1,137 @@
-html{
-  font-family: 'Lato', sans-serif;
-}
+/*
+rgb(190,226,231)
+rgb(79,87,170)
+rgb(69,72,87)
+rgb(114,129,139)
+rgb(143,0,46)
+ */
+
+/*
+todo:
+need to add transitions for turn based background
+ */
+
 body{
-  background: #252525;
-  color: #FFFFFF;
+  font-family: 'Short Stack', cursive;
+  background-color: rgba(62, 62, 62, 0.89);
+  color: rgb(244, 244, 244);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.orange-main-text{
-  color: #f46d3d;
+input{
+  font-family: 'Short Stack', cursive;
+  color: rgb(255, 255, 255);
 }
-.purple-main-text{
-  color: #a4b0f5;
+input:focus{
+  outline: none;
 }
-.blue-main-text{
-  color: #4464ad;
+a{
+  text-decoration: none;
+  color: rgb(255, 184, 0);
 }
-.blug-bg{
-  color: #4464ad;
+footer{
+  font-size: 18px;
 }
-.brown-main-text{
-  color: #b46500;
+footer > p > i{
+  color: rgb(255, 80, 80);
 }
-blockquote{
-  margin: 10px 0 !important;
-  padding-left: 1rem !important;
-  border-left: 5px solid #f46d3d !important;
+.container{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.header{
+  text-align: center;
+}
+.header > h1{
+  font-family: 'Handlee', cursive;
+  font-size: 42px;
+  margin-bottom: 1px;
+}
+.header > p{
+  margin: 0;
+}
+.attemptBox{
+  border-bottom: 2px solid white;
+}
+#attemptBox{
+  color: rgb(234, 250, 50);
+}
+.inputWrapper{
+  margin-top: 20px;
+}
+.attemptBox{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#mainGuess{
+}
+.numGuess{
+  height: 50px;
+  width: 50px;
+  border-top: 5px solid rgb(190,226,231);
+  border-left: 5px solid rgb(190,226,231);
+  border-right: 5px solid rgb(114,129,139);
+  border-bottom: 5px solid rgb(114,129,139);
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 26px;
+  background-color: rgb(70, 70, 70);
+}
+.numSubmit{
+  text-align: center;
+}
+.inputWrapper{
+  text-align: center;
+}
+#attemptBox{
+  grid-column: 3/3;
+  font-size: 20px;
+}
+#gameBoard{
+  border-bottom: 3px solid white;
+}
+#reset , .btn{
+  width: 150px;
+  margin: 5px auto 5px auto;
+  background: rgb(79,87,170);
+  padding: 10px;
+  border: 2px solid rgba(45, 45, 46, 0.89);
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btn{
+  width: 200px;
+}
+.btn:hover, #reset:hover{
+  background: rgb(59, 170, 77);
+  color: rgb(250, 250, 250);
+}
+.btn > p{
+  margin: 0;
+}
+#history{
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  color: rgb(108, 255, 119);
+}
+.historyList > p{
+  color: rgb(55, 230, 255);
+}
+#alertBox{
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.historyList{
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.correct{
+  background-color: rgb(97, 177, 112);
+}
+.wrong{
+  background-color: rgba(196, 66, 2, 0.8);
 }
